@@ -13,7 +13,7 @@
             box-sizing: border-box;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
-        
+
         :root {
             --primary: #1a5276;
             --secondary: #f39c12;
@@ -21,20 +21,20 @@
             --light: #f8f9fa;
             --dark: #343a40;
         }
-        
+
         body {
             line-height: 1.6;
             color: #333;
             background-color: var(--light);
         }
-        
+
         .container {
             width: 90%;
             max-width: 1200px;
             margin: 0 auto;
             padding: 0 15px;
         }
-        
+
         /* Header */
         header {
             background-color: var(--primary);
@@ -45,50 +45,50 @@
             z-index: 100;
             box-shadow: 0 2px 10px rgba(0,0,0,0.2);
         }
-        
+
         .header-container {
             display: flex;
             justify-content: space-between;
             align-items: center;
         }
-        
+
         .logo {
             font-size: 1.8rem;
             font-weight: bold;
             display: flex;
             align-items: center;
         }
-        
+
         .logo span {
             color: var(--secondary);
             margin-left: 5px;
         }
-        
+
         .logo i {
             margin-right: 10px;
             color: var(--secondary);
         }
-        
+
         nav ul {
             display: flex;
             list-style: none;
         }
-        
+
         nav ul li {
             margin-left: 1.5rem;
         }
-        
+
         nav ul li a {
             color: white;
             text-decoration: none;
             transition: color 0.3s;
             font-weight: 500;
         }
-        
+
         nav ul li a:hover {
             color: var(--secondary);
         }
-        
+
         /* Conversion Bar */
         .conversion-bar {
             background: linear-gradient(135deg, var(--secondary), #e67e22);
@@ -97,14 +97,14 @@
             text-align: center;
             position: relative;
         }
-        
+
         .conversion-buttons {
             display: flex;
             justify-content: center;
             gap: 20px;
             margin-top: 10px;
         }
-        
+
         /* Hero Section */
         .hero {
             background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1568605117036-5fe5e7bab0b7?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80');
@@ -114,13 +114,13 @@
             text-align: center;
             padding: 5rem 1rem;
         }
-        
+
         .hero h1 {
             font-size: 2.8rem;
             margin-bottom: 1rem;
             text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
         }
-        
+
         .hero p {
             font-size: 1.3rem;
             margin-bottom: 2.5rem;
@@ -128,7 +128,7 @@
             margin-left: auto;
             margin-right: auto;
         }
-        
+
         .btn {
             display: inline-block;
             background-color: var(--secondary);
@@ -142,7 +142,7 @@
             margin: 0.5rem;
             box-shadow: 0 4px 8px rgba(0,0,0,0.2);
         }
-        
+
         .btn-whatsapp {
             background-color: var(--accent);
             display: flex;
@@ -150,7 +150,7 @@
             justify-content: center;
             gap: 10px;
         }
-        
+
         .btn-call {
             background-color: var(--primary);
             display: flex;
@@ -158,22 +158,22 @@
             justify-content: center;
             gap: 10px;
         }
-        
+
         .btn:hover {
             transform: translateY(-5px);
             box-shadow: 0 8px 15px rgba(0,0,0,0.3);
         }
-        
+
         /* Sections */
         section {
             padding: 5rem 0;
         }
-        
+
         .section-title {
             text-align: center;
             margin-bottom: 3rem;
         }
-        
+
         .section-title h2 {
             font-size: 2.5rem;
             color: var(--primary);
@@ -181,7 +181,7 @@
             position: relative;
             display: inline-block;
         }
-        
+
         .section-title h2:after {
             content: '';
             position: absolute;
@@ -192,20 +192,20 @@
             height: 4px;
             background-color: var(--secondary);
         }
-        
+
         .section-title p {
             color: #666;
             font-size: 1.2rem;
             margin-top: 1.5rem;
         }
-        
+
         /* Services */
         .services-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 2rem;
         }
-        
+
         .service-card {
             background-color: white;
             border-radius: 10px;
@@ -215,8 +215,15 @@
             transition: transform 0.3s;
             position: relative;
             overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            height: 100%;
         }
-        
+
+        .service-card .service-features {
+            flex-grow: 1;
+        }
+
         .service-card:before {
             content: '';
             position: absolute;
@@ -226,41 +233,41 @@
             height: 5px;
             background: linear-gradient(90deg, var(--primary), var(--secondary));
         }
-        
+
         .service-card:hover {
             transform: translateY(-10px);
         }
-        
+
         .service-card i {
             font-size: 3rem;
             color: var(--primary);
             margin-bottom: 1.5rem;
         }
-        
+
         .service-card h3 {
             color: var(--primary);
             margin-bottom: 1rem;
             font-size: 1.5rem;
         }
-        
+
         .service-card .price {
             font-size: 1.8rem;
             color: var(--secondary);
             font-weight: bold;
             margin: 1.5rem 0;
         }
-        
+
         /* Areas */
         .areas {
             background-color: #f1f8ff;
         }
-        
+
         .areas-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
             gap: 1.5rem;
         }
-        
+
         .area-item {
             background-color: white;
             padding: 1.8rem;
@@ -269,29 +276,29 @@
             box-shadow: 0 5px 15px rgba(0,0,0,0.08);
             transition: transform 0.3s;
         }
-        
+
         .area-item:hover {
             transform: translateY(-5px);
         }
-        
+
         .area-item i {
             font-size: 2.5rem;
             color: var(--primary);
             margin-bottom: 1rem;
         }
-        
+
         .area-item h3 {
             color: var(--primary);
             font-size: 1.2rem;
         }
-        
+
         /* Testimonials */
         .testimonials-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 2rem;
         }
-        
+
         .testimonial-card {
             background-color: white;
             padding: 2.5rem;
@@ -299,7 +306,7 @@
             box-shadow: 0 5px 15px rgba(0,0,0,0.1);
             position: relative;
         }
-        
+
         .testimonial-card:before {
             content: '"';
             position: absolute;
@@ -309,21 +316,21 @@
             color: rgba(0,0,0,0.1);
             font-family: Georgia, serif;
         }
-        
+
         .testimonial-card p {
             font-style: italic;
             margin-bottom: 1.5rem;
             position: relative;
             z-index: 1;
         }
-        
+
         .testimonial-card .client {
             font-weight: bold;
             color: var(--primary);
             display: flex;
             align-items: center;
         }
-        
+
         /* CTA Sections */
         .cta {
             text-align: center;
@@ -331,22 +338,22 @@
             color: white;
             padding: 5rem 1rem;
         }
-        
+
         .cta h2 {
             margin-bottom: 2rem;
             font-size: 2.5rem;
         }
-        
+
         /* Page Content Styles */
         .page-content {
             display: none;
             padding: 2rem 0;
         }
-        
+
         .page-content.active {
             display: block;
         }
-        
+
         /* WhatsApp Float */
         .whatsapp-float {
             position: fixed;
@@ -368,11 +375,11 @@
             animation: pulse 2s infinite;
             transition: all 0.3s;
         }
-        
+
         .whatsapp-float:hover {
             transform: scale(1.1);
         }
-        
+
         @keyframes pulse {
             0% {
                 box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7);
@@ -384,14 +391,14 @@
                 box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
             }
         }
-        
+
         /* Footer */
         footer {
             background-color: #000;
             color: white;
             padding: 3rem 0 1.5rem;
         }
-        
+
         .footer-content {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -399,38 +406,38 @@
             text-align: left;
             margin-bottom: 2rem;
         }
-        
+
         .footer-content h3 {
             color: var(--secondary);
             margin-bottom: 1.5rem;
             font-size: 1.4rem;
         }
-        
+
         .footer-content ul {
             list-style: none;
         }
-        
+
         .footer-content ul li {
             margin-bottom: 0.8rem;
         }
-        
+
         .footer-content ul li a {
             color: white;
             text-decoration: none;
             transition: color 0.3s;
             font-weight: 500;
         }
-        
+
         .footer-content ul li a:hover {
             color: var(--secondary);
         }
-        
+
         .social-links {
             display: flex;
             gap: 15px;
             margin-top: 15px;
         }
-        
+
         .social-links a {
             display: inline-flex;
             align-items: center;
@@ -442,12 +449,12 @@
             border-radius: 50%;
             transition: all 0.3s;
         }
-        
+
         .social-links a:hover {
             background-color: var(--secondary);
             transform: translateY(-3px);
         }
-        
+
         .copyright {
             text-align: center;
             padding-top: 1.5rem;
@@ -455,7 +462,7 @@
             color: #aaa;
             font-size: 0.9rem;
         }
-        
+
         /* Form Success Message */
         .form-success {
             display: none;
@@ -466,7 +473,7 @@
             margin-top: 1rem;
             text-align: center;
         }
-        
+
         /* Service List Styles */
         .service-features {
             text-align: left;
@@ -474,13 +481,13 @@
             list-style: none;
             padding: 0;
         }
-        
+
         .service-features li {
             margin-bottom: 0.5rem;
             padding-left: 1.5rem;
             position: relative;
         }
-        
+
         .service-features li:before {
             content: "✓";
             position: absolute;
@@ -488,18 +495,18 @@
             color: var(--secondary);
             font-weight: bold;
         }
-        
+
         /* Form Styles */
         .form-group {
             margin-bottom: 1.5rem;
         }
-        
+
         .form-group label {
             display: block;
             margin-bottom: 0.5rem;
             font-weight: 600;
         }
-        
+
         .form-group input,
         .form-group select,
         .form-group textarea {
@@ -509,53 +516,53 @@
             border-radius: 5px;
             font-size: 1rem;
         }
-        
+
         /* Responsive */
         @media (max-width: 992px) {
             .header-container {
                 flex-direction: column;
                 text-align: center;
             }
-            
+
             nav ul {
                 margin-top: 1.5rem;
                 justify-content: center;
                 flex-wrap: wrap;
             }
-            
+
             nav ul li {
                 margin: 0 0.8rem 0.8rem;
             }
-            
+
             .hero h1 {
                 font-size: 2.3rem;
             }
-            
+
             .conversion-buttons {
                 flex-direction: column;
                 align-items: center;
             }
         }
-        
+
         @media (max-width: 576px) {
             .hero {
                 padding: 3rem 1rem;
             }
-            
+
             .hero h1 {
                 font-size: 2rem;
             }
-            
+
             .hero p {
                 font-size: 1.1rem;
             }
-            
+
             .btn {
                 display: block;
                 margin: 0.8rem auto;
                 padding: 0.9rem 1.5rem;
             }
-            
+
             .section-title h2 {
                 font-size: 2rem;
             }
@@ -621,21 +628,57 @@
                     <p>Quality automatic driving instruction at competitive prices</p>
                 </div>
                 <div class="services-grid">
+                    <!-- Introductory Lesson Card -->
+                    <div class="service-card">
+                        <i class="fas fa-star"></i>
+                        <h3>Introductory Lesson (1 Hour) – £25</h3>
+                        <p>Perfect first step to assess your driving ability</p>
+                        <div class="price">£25</div>
+                        <p>1 hour session</p>
+                        <ul class="service-features">
+                            <li>Assessment of your current driving ability</li>
+                            <li>A drive tailored to your experience and confidence level</li>
+                            <li>Introduction to our teaching approach</li>
+                            <li>Opportunity to discuss your driving goals and expectations</li>
+                            <li>A personalised plan outlining areas to focus on in future lessons</li>
+                        </ul>
+                        <a href="https://wa.me/447730738888?text=Hi!%20I'd%20like%20to%20book%20the%20£25%20introductory%20driving%20lesson" class="btn btn-whatsapp" onclick="gtag('event', 'conversion', {'send_to': 'AW-17529613287/y6WxCIGT6ZQbEOfX4qZB'});">Book Intro Lesson</a>
+                    </div>
+
+                    <!-- 1.5 Hour Lesson Card -->
                     <div class="service-card">
                         <i class="fas fa-clock"></i>
-                        <h3>Standard Lessons</h3>
+                        <h3>1.5 Hour Lesson – £52.50</h3>
                         <p>Regular driving lesson to build your skills</p>
-                        <div class="price">£35 per hour</div>
-                        <p>60-minute sessions</p>
+                        <div class="price">£52.50</div>
+                        <p>1.5-hour session</p>
                         <ul class="service-features">
+                            <li>90-minute session</li>
                             <li>Progressive skill development</li>
                             <li>Focus on specific maneuvers</li>
                             <li>Road safety awareness</li>
                             <li>Mock test preparation</li>
                         </ul>
-                        <a href="https://wa.me/447730738888?text=Hi!%20I'd%20like%20to%20book%20standard%20driving%20lessons" class="btn btn-whatsapp" onclick="gtag('event', 'conversion', {'send_to': 'AW-17529613287/y6WxCIGT6ZQbEOfX4qZB'});" >Book Lessons</a>
+                        <a href="https://wa.me/447730738888?text=Hi!%20I'd%20like%20to%20book%20a%201.5%20hour%20driving%20lesson%20for%20£52.50" class="btn btn-whatsapp" onclick="gtag('event', 'conversion', {'send_to': 'AW-17529613287/y6WxCIGT6ZQbEOfX4qZB'});">Book 1.5 Hour Lesson</a>
                     </div>
-                    
+
+                    <!-- 2 Hour Lesson Card -->
+                    <div class="service-card">
+                        <i class="fas fa-hourglass-half"></i>
+                        <h3>2 Hour Lesson – £70</h3>
+                        <p>Extended session for deeper practice</p>
+                        <div class="price">£70</div>
+                        <p>2-hour session</p>
+                        <ul class="service-features">
+                            <li>120-minute session</li>
+                            <li>Ideal for in-depth learning and building confidence.</li>
+                            <li>More time to practise and improve driving skills</li>
+                            <li>Allows more time to make meaningful progress and build consistency    </li>
+                            <li>Opportunity to cover multiple topics and manoeuvres</li>
+                        </ul>
+                        <a href="https://wa.me/447730738888?text=Hi!%20I'd%20like%20to%20book%20a%202%20hour%20driving%20lesson%20for%20£70" class="btn btn-whatsapp" onclick="gtag('event', 'conversion', {'send_to': 'AW-17529613287/y6WxCIGT6ZQbEOfX4qZB'});">Book 2 Hour Lesson</a>
+                    </div>
+
                     <div class="service-card">
                         <i class="fas fa-money-bill-wave"></i>
                         <h3>Block Booking</h3>
@@ -651,11 +694,12 @@
                         <a href="https://wa.me/447730738888?text=Hi!%20I'm%20interested%20in%20the%2010-hour%20block%20booking" class="btn btn-whatsapp" onclick="gtag('event', 'conversion', {'send_to': 'AW-17529613287/y6WxCIGT6ZQbEOfX4qZB'});">Book Now</a>
                     </div>
 
+                    <!-- Intensive Course Card -->
                     <div class="service-card">
                         <i class="fas fa-tachometer-alt"></i>
-                        <h3>Intensive Course</h3>
+                        <h3>Intensive Course (10 Hours) – £330</h3>
                         <p>Fast-track your way to passing your test</p>
-                        <div class="price">£350</div>
+                        <div class="price">£330</div>
                         <p>10-hour package completed ASAP (usually within a week)</p>
                         <ul class="service-features">
                             <li>Comprehensive skill coverage</li>
@@ -797,10 +841,10 @@
             </div>
             <div style="max-width: 800px; margin: 0 auto;">
                 <p>Welcome to BSN Driving School, where we specialize in providing high-quality automatic driving lessons across Manchester and surrounding areas.</p>
-                
+
                 <h3 style="margin: 2rem 0 1rem 0; color: var(--primary);">Our Mission</h3>
                 <p>Our mission is to make learning to drive as stress-free and enjoyable as possible. We focus exclusively on automatic transmission vehicles, allowing our students to concentrate on the road without the distraction of gear changes.</p>
-                
+
                 <h3 style="margin: 2rem 0 1rem 0; color: var(--primary);">Why Choose Automatic?</h3>
                 <p>Automatic cars are becoming increasingly popular, and for good reason:</p>
                 <ul style="margin-left: 2rem; margin-bottom: 2rem;">
@@ -809,10 +853,10 @@
                     <li>Modern automatics are fuel-efficient</li>
                     <li>You can focus entirely on road awareness</li>
                 </ul>
-                
+
                 <h3 style="margin: 2rem 0 1rem 0; color: var(--primary);">Our Instructor</h3>
                 <p>Your instructor is fully qualified and DVSA-approved with years of experience teaching automatic transmission driving. Patient, friendly, and dedicated to helping you become a safe, confident driver.</p>
-                
+
                 <h3 style="margin: 2rem 0 1rem 0;color: var(--primary);">Our Vehicle</h3>
                 <p>We use a modern, well-maintained automatic car that's equipped with dual controls for added safety. The vehicle is clean, comfortable, and specifically chosen for its ease of driving.</p>
             </div>
@@ -826,22 +870,57 @@
                 <h2>Driving Lesson Packages</h2>
                 <p>Choose the right automatic driving lesson package for you</p>
             </div>
-            
+
             <div class="services-grid">
+                <!-- Introductory Lesson Card -->
+                <div class="service-card">
+                    <i class="fas fa-star"></i>
+                    <h3>Introductory Lesson (1 Hour) – £25</h3>
+                    <div class="price">£25</div>
+                    <p>1 hour session - Perfect first step</p>
+                    <ul class="service-features">
+                        <li>Assessment of your current driving ability</li>
+                        <li>A drive tailored to your experience and confidence level</li>
+                        <li>Introduction to our teaching approach</li>
+                        <li>Opportunity to discuss your driving goals and expectations</li>
+                        <li>Introduction or practice of manoeuvres, where appropriate</li>
+                        <li>A personalised plan outlining areas to focus on in future lessons</li>
+                    </ul>
+                    <a href="https://wa.me/447730738888?text=Hi!%20I'd%20like%20to%20book%20the%20£25%20introductory%20driving%20lesson" class="btn btn-whatsapp" onclick="gtag('event', 'conversion', {'send_to': 'AW-17529613287/y6WxCIGT6ZQbEOfX4qZB'});">Book Intro Lesson</a>
+                </div>
+
+                <!-- 1.5 Hour Lesson Card -->
                 <div class="service-card">
                     <i class="fas fa-clock"></i>
-                    <h3>Standard Lessons</h3>
-                    <div class="price">£35 per hour</div>
-                    <p>Regular lessons to build your skills</p>
+                    <h3>1.5 Hour Lesson – £52.50</h3>
+                    <div class="price">£52.50</div>
+                    <p>1.5-hour session to build your skills</p>
                     <ul class="service-features">
-                        <li>60-minute sessions</li>
+                        <li>90-minute session</li>
                         <li>Progressive skill development</li>
                         <li>Focus on specific maneuvers</li>
                         <li>Road safety awareness</li>
+                        <li>Mock test preparation</li>
                     </ul>
-                    <a href="https://wa.me/447730738888?text=Hi!%20I'd%20like%20to%20book%20standard%20driving%20lessons" class="btn btn-whatsapp" onclick="gtag('event', 'conversion', {'send_to': 'AW-17529613287/y6WxCIGT6ZQbEOfX4qZB'});">Book Now</a>
+                    <a href="https://wa.me/447730738888?text=Hi!%20I'd%20like%20to%20book%20a%201.5%20hour%20driving%20lesson%20for%20£52.50" class="btn btn-whatsapp" onclick="gtag('event', 'conversion', {'send_to': 'AW-17529613287/y6WxCIGT6ZQbEOfX4qZB'});">Book 1.5 Hour Lesson</a>
                 </div>
-                
+
+                <!-- 2 Hour Lesson Card -->
+                <div class="service-card">
+                    <i class="fas fa-hourglass-half"></i>
+                    <h3>2 Hour Lesson – £70</h3>
+                    <div class="price">£70</div>
+                    <p>Extended 2-hour session</p>
+                    <ul class="service-features">
+                        <li>120-minute session</li>
+                        <li>Ideal for test route practice</li>
+                        <li>Comprehensive manoeuvre practice</li>
+                        <li>Builds stamina and confidence</li>
+                        <li>Great value per hour</li>
+                    </ul>
+                    <a href="https://wa.me/447730738888?text=Hi!%20I'd%20like%20to%20book%20a%202%20hour%20driving%20lesson%20for%20£70" class="btn btn-whatsapp" onclick="gtag('event', 'conversion', {'send_to': 'AW-17529613287/y6WxCIGT6ZQbEOfX4qZB'});">Book 2 Hour Lesson</a>
+                </div>
+
                 <div class="service-card">
                     <i class="fas fa-money-bill-wave"></i>
                     <h3>Block Booking</h3>
@@ -856,10 +935,11 @@
                     <a href="https://wa.me/447730738888?text=Hi!%20I'm%20interested%20in%20the%2010-hour%20block%20booking" class="btn btn-whatsapp" onclick="gtag('event', 'conversion', {'send_to': 'AW-17529613287/y6WxCIGT6ZQbEOfX4qZB'});">Book Now</a>
                 </div>
 
+                <!-- Intensive Course Card -->
                 <div class="service-card">
                     <i class="fas fa-tachometer-alt"></i>
-                    <h3>Intensive Course</h3>
-                    <div class="price">£350</div>
+                    <h3>Intensive Course (10 Hours) – £330</h3>
+                    <div class="price">£330</div>
                     <p>Fast-track to test readiness</p>
                     <ul class="service-features">
                         <li>10 hours of instruction</li>
@@ -880,11 +960,11 @@
                 <h2>Coverage Areas</h2>
                 <p>We provide automatic driving lessons across Manchester and surrounding areas</p>
             </div>
-            
+
             <div style="background-color: white; padding: 2.5rem; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); margin-bottom: 3rem;">
                 <h3 style="color: var(--primary); text-align: center; margin-bottom: 1.5rem;">Full Area Coverage</h3>
                 <p style="text-align: center;">We cover the following areas across Manchester and surrounding areas:</p>
-                
+
                 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; margin-top: 1.5rem;">
                     <div style="padding: 1rem; background-color: #f8f9fa; border-left: 4px solid var(--primary);">M3 – Salford Quays</div>
                     <div style="padding: 1rem; background-color: #f8f9fa; border-left: 4px solid var(--primary);">M4 – Manchester City Centre</div>
@@ -905,14 +985,14 @@
                     <div style="padding: 1rem; background-color: #f8f9fa; border-left: 4px solid var(--primary);">OL9 – Chadderton</div>
                 </div>
             </div>
-            
+
             <div style="max-width: 800px; margin: 0 auto;">
                 <h3 style="color: var(--primary); margin-bottom: 1rem;">Pickup Service</h3>
                 <p>We offer a convenient pickup service within our coverage areas. Whether you're at home, work, or school, we can arrange to start your lesson from a location that suits you.</p>
-                
+
                 <h3 style="color: var(--primary); margin: 2rem 0 1rem 0;">Test Centers</h3>
                 <p>We're familiar with all test centers in our coverage areas and can provide practice on test routes to maximize your chances of success.</p>
-                
+
                 <h3 style="color: var(--primary); margin: 2rem 0 1rem 0;">Local Knowledge</h3>
                 <p>With extensive knowledge of the Manchester and surrounding areas, we can tailor lessons to include the types of roads and conditions you'll most frequently encounter.</p>
             </div>
@@ -926,24 +1006,24 @@
                 <h2>Contact Us</h2>
                 <p>Get in touch to book your driving lessons</p>
             </div>
-            
+
             <div style="max-width: 600px; margin: 0 auto; background-color: white; padding: 2.5rem; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.1);">
                 <form action="https://formspree.io/f/mgvlnepz" method="POST" id="driving-lesson-form">
                     <div class="form-group">
                         <label>Full Name</label>
                         <input type="text" name="name" required>
                     </div>
-                    
+
                     <div class="form-group">
                         <label>Email Address</label>
                         <input type="email" name="email" required>
                     </div>
-                    
+
                     <div class="form-group">
                         <label>Phone Number</label>
                         <input type="tel" name="phone" required>
                     </div>
-                    
+
                     <div class="form-group">
                         <label>Preferred Area</label>
                         <select name="area" required>
@@ -967,29 +1047,31 @@
                             <option value="OL9">OL9 – Chadderton</option>
                         </select>
                     </div>
-                    
+
                     <div class="form-group">
                         <label>Lesson Type</label>
                         <select name="lesson-type" required>
                             <option value="">Select lesson type</option>
-                            <option value="standard">Standard Lesson</option>
-                            <option value="block">Block Booking (10 hours)</option>
-                            <option value="intensive">Intensive Course</option>
+                            <option value="intro">Introductory Lesson (1 Hour) – £25</option>
+                            <option value="standard-1.5">1.5 Hour Lesson – £52.50</option>
+                            <option value="standard-2">2 Hour Lesson – £70</option>
+                            <option value="block">Block Booking (10 hours – £330)</option>
+                            <option value="intensive">Intensive Course (10 Hours – £330)</option>
                         </select>
                     </div>
-                    
+
                     <div class="form-group">
                         <label>Message (Any specific requirements or questions)</label>
                         <textarea name="message" rows="5"></textarea>
                     </div>
-                    
+
                     <button type="submit" class="btn" style="width: 100%; text-align: center;">Send Message</button>
                 </form>
                 <div class="form-success" id="form-success">
                     Thank you for your message! We will contact you shortly to confirm your driving lesson.
                 </div>
             </div>
-            
+
             <div style="max-width: 800px; margin: 3rem auto; text-align: center;">
                 <h3 style="color: var(--primary); margin-bottom: 1rem;">Other Contact Methods</h3>
                 <p>Phone: 07730738888</p>
@@ -1017,7 +1099,7 @@
                         <a href="#"><i class="fab fa-instagram"></i></a>
                     </div>
                 </div>
-                
+
                 <div>
                     <h3>Quick Links</h3>
                     <ul>
@@ -1028,7 +1110,7 @@
                         <li><a href="#" class="nav-link" data-page="contact">Contact</a></li>
                     </ul>
                 </div>
-                
+
                 <div>
                     <h3>Contact Info</h3>
                     <p>Phone: 07730738888</p>
@@ -1036,7 +1118,7 @@
                     <p>Hours: Mon-Sun, 7am-8pm</p>
                 </div>
             </div>
-            
+
             <div class="copyright">
                 <p>&copy; 2025 BSN Driving School. All rights reserved.</p>
             </div>
@@ -1048,21 +1130,21 @@
         document.addEventListener('DOMContentLoaded', function() {
             const navLinks = document.querySelectorAll('.nav-link');
             const pageContents = document.querySelectorAll('.page-content');
-            
+
             // Function to show a specific page
             function showPage(pageId) {
                 // Hide all pages
                 pageContents.forEach(page => {
                     page.classList.remove('active');
                 });
-                
+
                 // Show target page
                 document.getElementById(pageId).classList.add('active');
-                
+
                 // Scroll to top
                 window.scrollTo(0, 0);
             }
-            
+
             // Add click event to all navigation links
             navLinks.forEach(link => {
                 link.addEventListener('click', function(e) {
@@ -1071,7 +1153,7 @@
                     showPage(targetPage);
                 });
             });
-            
+
             // Form submission handling for Formspree
             const contactForm = document.getElementById('driving-lesson-form');
             if (contactForm) {
@@ -1083,13 +1165,13 @@
                     }, 1000);
                 });
             }
-            
+
             // Track conversions
             const trackConversion = (action) => {
                 // In a real implementation, you would send this to Google Analytics
                 console.log(`Conversion tracked: ${action}`);
             };
-            
+
             // Track WhatsApp clicks
             const whatsappButtons = document.querySelectorAll('.btn-whatsapp');
             whatsappButtons.forEach(btn => {
@@ -1097,7 +1179,7 @@
                     trackConversion('WhatsApp Click');
                 });
             });
-            
+
             // Track phone calls
             const callButtons = document.querySelectorAll('a[href^="tel:"]');
             callButtons.forEach(btn => {
